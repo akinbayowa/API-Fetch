@@ -2,14 +2,12 @@
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
       monospace;
     text-align: center;
-    
+    margin: 0px;
+    padding: 0px;
+    color: black;
+    box-sizing: border-box;
   }
 
-  .listRes ul li {
-      margin-top: 5px;
-      background-color:aqua;
-      font-size: 18px;
-      text-align: left;
-      list-style-type: square;
-    
-  }
+  
+
+  

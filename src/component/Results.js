@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import '../Style/Results.css';
 
 function Results({details, loading}) {
   if (loading){

@@ -1,6 +1,7 @@
-import React, {   useEffect, useState } from 'react';
+import React, {   useEffect, useState  } from 'react';
 import axios  from 'axios';
 import Results from '../component/Results';
+import '../Style/Search.css';
 
 
 
@@ -56,20 +57,24 @@ const Search =()=> {
   }
   return(
       <>
-        <input
-                
+      <div className='searchInput'>
+
+        <input 
+        placeholder='Enter your username'       
         value={username}
         onChange={e => setUsername(e.target.value)} 
         /> 
         <button onClick={handleSubmit}>{loading ? "loading....": "Search"}</button>
-
+      </div>
         <div>
             {repos.map(renderRepo)}
         </div>
 
         <div>
         <Results details={details} loading={detailsLoading} />
-        </div> 
+        </div>
+
+        
     </>
   
   )
